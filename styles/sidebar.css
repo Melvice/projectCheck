@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.sidebar{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;/* to cover the whole width of the screen*/
+  left: -660px;
+  top: -120px;
+  flex-shrink: 0;
+
+  
+}
+.sidebar::-webkit-scrollbar{
+  display: none;
+}
+.sidebar-icon{
+  background-color: rgba(125, 231, 197, 0);
+  height: 80px;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 0px;
+  color: white;
+  padding-left: 12px;
+  transition: background-color .7s ;
+
+}
+
+.sidebar-icon:hover{
+  background-color:  rgb(0, 246, 33);
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.2s ;
+}
+.sidebar-icon img{
+  height: 24px;
+  margin-bottom: 4px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-logo{
+  width: 300px;
+  height: 300px;
+  top:-100px;
+  margin-top:-50px;
+  padding-left: 15px;
+  padding-bottom: -25px;
+}
+.logo{
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  margin-left: -60px;
+
+}
+.sidebar-icon .tooltip
+{
+  position: relative;
+  color: rgb(255, 255, 255);
+  background-color: rgb(19, 21, 19);
+  border-radius: 40px;
+  padding: 4px 8px 4px 8px;
+  font-size: 20px;
+  bottom:-15px;
+  margin-left: 2px;
+  opacity: 0; 
+  transition: opacity 0.2s;
+  pointer-events: none;
+  white-space: nowrap;
+  top: 0;
+  left: -10px;
+}
+.sidebar-icon:hover .tooltip
+{
+  opacity: 1;
+ 
+}
+.image-icon{
+  height: 24px;
+  margin-bottom: 4px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,35 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  background-image: url("/icons/background.png");
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  position: relative;
+  overflow:auto;
+
+}
+body{
+  position:relative;
+  left: 0;
+  height:100%;
+  width:100%;
+}
+input[type='checkbox'] {
+  accent-color:rgb(93, 215, 255);
+  width: 20px;
+}
+html{
+  scroll-behavior: smooth;
+  height:100%;
+}
+.container::-webkit-scrollbar{
+  display: none;
+}

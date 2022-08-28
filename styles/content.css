@@ -1,0 +1,150 @@
+.content{
+  position: absolute;
+  width:30px;
+  height: 500px;
+  left: 200px;
+  margin-left: 50px;
+  top: 185px;
+  background-color: rgb(244, 246, 247);
+  border-radius: 40px;
+  display: flex;
+  flex: 1;
+  flex-shrink: 1;
+  margin-top: 30px;
+  box-shadow: 4px 2px 15px rgb(1, 1, 1);
+  background: linear-gradient(45deg, #87adfe, #ff77cd);
+  
+}
+.todo-container{
+  position: relative;
+  background: linear-gradient(55deg, #b6c8f0, #ecc0dc);
+  background-color: rgb(240, 244, 246);
+  max-width: 100%;
+  left: 10px;
+  top: 10px;
+  border-radius: 50px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
+  display: grid;
+  padding-right: 20px;
+  justify-content: space-between;/* to cover the whole width of the screen*/
+  grid-template-columns: 1fr 1fr 1fr;
+  height: fit-content;
+  padding-bottom: 50px;
+  padding-left:0;
+  margin-left: 0px;
+  margin-top: 10px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  z-index: 10;
+}
+.todo-container::-webkit-scrollbar{
+  display: none;
+}
+
+.todo-list-container{
+  position: absolute;
+  background-color: rgba(225, 222, 239, 0.375);
+  width:1000px;
+  height: 500px;
+  max-height: 800px;
+  border-radius: 40px;
+  overflow: scroll;
+  left: 200px;
+  z-index: 10;
+  justify-content: space-between;/* to cover the whole width of the screen*/
+  }
+.todo-list-container::-webkit-scrollbar{
+  display: none;
+}
+.input-style{
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(209, 230, 237);
+  height: 25px;
+  border-radius: 10%;
+  margin-right: 5px;
+  font-family: inherit;
+  font-size: 20px;
+}
+.add-todo-style{
+  background-color:  rgb(238, 243, 245);
+  width: fit-content;
+  padding: 8px;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #87adfe, #ff77cd);
+  border:none;
+  box-sizing: border-box;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.592);
+  position: absolute;
+  top: -80px;
+  left: 650px;
+  z-index: 200;
+  min-width: 180px;
+  display: flex;
+  flex: 1;
+}
+.instruction{
+  position: absolute;
+  left:480px;
+  top:-70px;
+  width: 150px;
+  font-size: 20px;
+  font-weight: 100;
+  color: rgb(106, 116, 116);
+}
+.todo-item{
+  background-color: rgba(192, 225, 233, 0.57);
+  position: relative;
+  width:fit-content;
+  height: fit-content;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  left: 50px;
+  top:40px;
+  border-radius: 50px;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  font-family: inherit;
+  box-shadow: 4px 8px 8px rgb(10, 116, 97);
+  border: none;
+  z-index: 10;
+}
+
+/*media query ---> responsive design*/
+@media (max-width:750px) {
+  .todo-container{
+    grid-template-columns: 1fr 1fr;
+  } 
+}
+@media (max-width:751px) and (min-width:999px) {
+  .todo-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  } 
+}
+@media (min-width:1000px) {
+  .todo-container{
+    grid-template-columns: 1fr 1fr 1fr  ;
+  } 
+}
+.button-image{
+  width: 20px;
+  height: 20%;
+}
+.button-style{
+  margin-left:24px; 
+
+  background: linear-gradient(35deg, #5b83af, #74cbb8);
+  cursor:pointer;
+  width:60px;
+  border-radius: 40px;
+  box-shadow: 1px 5px 5px rgb(18, 18, 18);
+  border:none;
+  font-size: medium;
+  padding: 2%;
+  margin-top: 2px;
+}
+.middlepage{
+  position: relative;
+}
